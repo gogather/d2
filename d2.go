@@ -14,6 +14,15 @@ func NewD2() *D2 {
 	}
 }
 
+func (md2 *D2) Get(section, key string) (value interface{}, exist bool) {
+	sect, ok := md2.MD2.Get(section)
+	if !ok {
+		return nil, ok
+	}
+	sectMap, _ := sect.(*safemap.SafeMap)
+	return sectMap.Get(key)
+}
+
 func (md2 *D2) Add(section, key string, value interface{}) {
 	sect, ok := md2.MD2.Get(section)
 	if !ok {

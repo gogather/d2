@@ -24,8 +24,11 @@ func Test_Map(t *testing.T) {
 	l, _ := json.Marshal(data)
 	fmt.Println(string(l))
 
+	fmt.Println(data.Get("hello2", "key"))
+
 	data.RemoveSection("hello2")
 
 	m, _ := json.Marshal(data)
 	fmt.Println(string(m))
+
 }
