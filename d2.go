@@ -23,6 +23,15 @@ func (md2 *D2) Get(section, key string) (value interface{}, exist bool) {
 	return sectMap.Get(key)
 }
 
+func (md2 *D2) GetSection(section string) (value *safemap.SafeMap, exist bool) {
+	sect, ok := md2.MD2.Get(section)
+	if !ok {
+		return nil, ok
+	}
+	sectMap, ok := sect.(*safemap.SafeMap)
+	return sectMap, ok
+}
+
 func (md2 *D2) Add(section, key string, value interface{}) {
 	sect, ok := md2.MD2.Get(section)
 	if !ok {
