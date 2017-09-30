@@ -65,3 +65,19 @@ func (md2 *D2) RemoveKey(section, key string) {
 func (md2 *D2) RemoveSection(section string) {
 	md2.MD2.Remove(section)
 }
+
+func (md2 *D2) Clear() {
+	md2.MD2 = safemap.New()
+}
+
+func (md2 *D2) GetMapMap() map[string]map[string]interface{} {
+	dumpResult := map[string]map[string]interface{}{}
+	for section, lowerMap := range md2.MD2.GetMap() {
+		sectionMap := map[string]interface{}{}
+		for key, value := range lowerMap.(*safemap.SafeMap).GetMap() {
+			sectionMap[key] = value
+		}
+		dumpResult[section] = sectionMap
+	}
+	return dumpResult
+}

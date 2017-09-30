@@ -14,6 +14,11 @@ func Test_Map(t *testing.T) {
 
 	data.Add("hello2", "world", 123)
 	data.Add("hello2", "key", "value")
+
+	mapmap:=data.GetMapMap()
+	c,_:=json.Marshal(mapmap)
+	fmt.Println("map-map:", string(c))
+
 	data.RemoveKey("hello", "world")
 
 	k, _ := json.Marshal(data)
