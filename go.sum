@@ -1,7 +1,7 @@
 github.com/gogather/com v1.0.3 h1:RDnjFh4zWNnsybgwWb80JUcsyhzCWqrb6bkYVi2BroA=
 github.com/gogather/com v1.0.3/go.mod h1:TqD3+8YSMKraCmVdjuabq0Uasc/UylaorCL2xKgBDzM=
-github.com/gogather/safemap v0.0.0-20170930074128-e4dc79c94fb6 h1:7xSoSUf+WJZiIPMCRmhsNo9t5uV7app1EkT6mLgkAoI=
-github.com/gogather/safemap v0.0.0-20170930074128-e4dc79c94fb6/go.mod h1:vU7iyfqc7U1X/qHEzcim56jarAw9aa7WDopUzepiO2I=
+github.com/gogather/safemap/v2 v2.0.0 h1:TXohyxb5cCLdFyklZN9CuBSl99wMn4oo0RXfAzHEuQg=
+github.com/gogather/safemap/v2 v2.0.0/go.mod h1:xPbBwTB1sD5WQZw5H7201EVckzswLXUfYUytqDpDu7k=
 github.com/gopherjs/gopherjs v1.17.2 h1:fQnZVsXk8uxXIStYb0N4bGk7jeyTalG/wsZjQ25dO0g=
 github.com/jtolds/gls v4.20.0+incompatible h1:xdiiI2gbIgH/gLH7ADydsJ1uDOEzR8yvV7C0MuV77Wo=
 github.com/smarty/assertions v1.15.0 h1:cR//PqUBUiQRakZWqBiFFQ9wb8emQGDb0HeGdqGByCY=
